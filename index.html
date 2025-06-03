@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio de Diseño</title>
+  <link rel="stylesheet" href="style.css" />
+  
+ 
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+
+</head>
+<body>
+
+  <!-- Header -->
+ <header>
+  <nav class="navbar">
+    <div class="logo">Portafolio</div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#sobre">Sobre mí</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Hero -->
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <h1>Hola, soy Andres Felipe </h1>
+    <p>Diseñador creativo especializado en branding, diseño web y más.</p>
+    <a href="#contacto" class="btn">Contáctame</a>
+  </div>
+</section>
+
+
+  <!-- Proyectos destacados (carrusel) -->
+<section class="proyectos" id="proyectos">
+  <h2>Proyectos Destacados</h2>
+  <div class="swiper"> <!-- antes: swiper-container -->
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="assets/Aiye - Brochure Mockup.jpg" alt="Proyecto 1"></div>
+      <div class="swiper-slide"><img src="assets/Marca kokin redes.jpg" alt="Proyecto 2"></div>
+      <div class="swiper-slide"><img src="assets/jersey .jpg" alt="Proyecto 3"></div>
+      <div class="swiper-slide"><img src="assets/Alvarez web.jpg" alt="Proyecto 4"></div>
+      <div class="swiper-slide"><img src="assets/Illustracion .jpg" alt="Proyecto 5"></div>
+    </div>
+    <!-- Navegación -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+
+  <!-- Servicios -->
+<section class="servicios" id="servicios">
+  <h2>Servicios</h2>
+  <div class="cards servicios-cards">
+    <div class="card">
+      
+      <i class="fa-solid fa-object-group fa-3x"style="color: #ff8800;"></i>
+      <h3>Diseño de Marca</h3>
+      <p>
+        Creación de identidades visuales memorables que reflejan la esencia de tu negocio y conectan con tu público objetivo.
+      </p>
+    </div>
+    <div class="card">
+      <i class="fas fa-laptop-code fa-3x" style="color: #ff8800;"></i>
+      <h3>Diseño Web Responsive</h3>
+      <p>
+        Desarrollo de sitios web modernos, accesibles y adaptables a todos los dispositivos para potenciar tu presencia digital.
+      </p>
+    </div>
+    <div class="card">
+      <i class="fas fa-bullhorn fa-3x" style="color: #ff8800;"></i>
+      <h3>Medios Impresos</h3>
+      <p>
+        Creación de piezas visuales impactantes para medios impresos: branding, editorial, packaging, papelería corporativa y flyers. Diseño pensado para comunicar con fuerza.
+      </p>
+    </div>
+    <div class="card">
+      <i class="fas fa-palette fa-3x" style="color: #ff8800;"></i>
+      <h3>Ilustración</h3>
+      <p>
+        Doy vida a ideas a través de ilustraciones únicas, coloridas y con carácter. Descubre mi trabajo y colaboremos en tu próximo proyecto visual.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Sobre mí -->
+<section class="sobre" id="sobre-mi">
+  <h2>Sobre mí</h2>
+  <div class="sobre-container">
+    <div class="sobre-imagen">
+      <img src="assets/Recurso 5.png" alt="Foto de [Tu Nombre]" />
+    </div>
+    <div class="sobre-texto">
+      <p>
+        ¡Hola! Soy <strong>Andres</strong>, diseñador gráfico y creativo con más de 5 años de experiencia en proyectos de branding, diseño web y multimedia. Apasionado por crear soluciones visuales únicas que conecten con las personas.
+      </p>
+      <p>
+        Me especializo en transformar ideas en diseños funcionales y atractivos, siempre cuidando cada detalle y enfocándome en la experiencia del usuario.
+      </p>
+      <ul class="habilidades">
+        <li><strong>Diseño gráfico:</strong> Adobe Photoshop, Illustrator, InDesign</li>
+        <li><strong>Diseño web:</strong> HTML, CSS, JavaScript, Figma</li>
+        <li><strong>Otras habilidades:</strong> Comunicación, trabajo en equipo, creatividad</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <!-- galeria -->
+<section class="galeria" id="galeria">
+  <h2>Galería</h2>
+  <div class="galeria-grid">
+    <img src="assets/iconos VENTAJAS ok-01.png" alt="Imagen 1" class="galeria-img" />
+    <img src="assets//iconos VENTAJAS ok-02.png" alt="Imagen 2" class="galeria-img" />
+    <img src="assets/iconos VENTAJAS ok-03.png" alt="Imagen 3" class="galeria-img" />
+    <img src="assets/iconos VENTAJAS ok-04.png" alt="Imagen 4" class="galeria-img" />
+  </div>
+
+  <!-- Contenedor para la imagen ampliada -->
+  <div class="lightbox" id="lightbox">
+    <img src="" alt="Imagen ampliada" class="lightbox-img" />
+  </div>
+</section>
+
+  <!-- Contacto -->
+  <section class="contacto" id="contacto">
+    <h2>Contacto</h2>
+<form action="https://formsubmit.co/mrvolado.estudio@gmail.com" method="POST">
+  <input type="hidden" name="_next" value="https://mrvolado.github.io/Page/gracias.html">
+  <input type="hidden" name="_captcha" value="false">
+
+  <input type="text" name="name" placeholder="Tu nombre" required />
+  <input type="email" name="email" placeholder="Tu correo" required />
+
+  <select name="interes" required>
+    <option value="">¿Qué servicio te interesa?</option>
+    <option value="diseño-marca">Diseño Gráfico</option>
+    <option value="diseño-web">Diseño Web Responsive</option>
+    <option value="medios-impresos">Medios Impresos</option>
+    <option value="ilustracion">Ilustración</option>
+    <option value="otro">Otro</option>
+  </select>
+
+  <textarea name="message" placeholder="Tu mensaje" required></textarea>
+  <button type="submit">Enviar</button>
+</form>
+
+
+
+<div id="formMessage" style="margin-top: 15px; color: green; font-weight: bold;"></div>
+
+
+    <!-- Botón de descarga -->
+    <a href="assets/Portafolio_rasterizado.pdf" download class="btn-descargar" id="descargarBtn">
+      Descargar Portafolio PDF
+    </a>
+    <div id="mensaje-toast" class="toast">¡Gracias por descargar el portafolio!</div>
+  </section>
+
+  <!-- Redes Sociales -->
+<section class="redes-sociales">
+  <h2>Sígueme en redes</h2>
+  <div class="iconos-redes">
+    <a href="https://www.instagram.com/mrvolado.estudio" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.behance.net/mrvoladoestudio" target="_blank" aria-label="Behance">
+      <i class="fab fa-behance"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/tu_usuario" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://wa.me/573133287046" target="_blank" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+</section>
+
+
+
+  <footer>
+    <p>&copy; 2025 Mi Portafolio de Diseño. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+   <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script> 
+
+</body>
+</html>
